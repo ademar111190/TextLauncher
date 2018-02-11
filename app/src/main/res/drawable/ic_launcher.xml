@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#ffffff"/>
+        </shape>
+    </item>
+    <item android:top="-24dp">
+        <shape android:shape="line">
+            <stroke
+                android:width="2dp"
+                android:color="#000000"/>
+            <size android:height="2dp"/>
+        </shape>
+    </item>
+    <item android:top="-16dp">
+        <shape android:shape="line">
+            <stroke
+                android:width="2dp"
+                android:color="#000000"/>
+            <size android:height="2dp"/>
+        </shape>
+    </item>
+    <item android:top="-8dp">
+        <shape android:shape="line">
+            <stroke
+                android:width="2dp"
+                android:color="#000000"/>
+            <size android:height="2dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="line">
+            <stroke
+                android:width="2dp"
+                android:color="#000000"/>
+            <size android:height="2dp"/>
+        </shape>
+    </item>
+    <item android:top="8dp">
+        <shape android:shape="line">
+            <stroke
+                android:width="2dp"
+                android:color="#000000"/>
+            <size android:height="2dp"/>
+        </shape>
+    </item>
+    <item android:top="16dp">
+        <shape android:shape="line">
+            <stroke
+                android:width="2dp"
+                android:color="#000000"/>
+            <size android:height="2dp"/>
+        </shape>
+    </item>
+    <item android:top="24dp">
+        <shape android:shape="line">
+            <stroke
+                android:width="2dp"
+                android:color="#000000"/>
+            <size android:height="2dp"/>
+        </shape>
+    </item>
+</layer-list>

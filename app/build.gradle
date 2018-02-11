@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "ademar.textlauncher"
+        minSdkVersion 14
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0.0"
+    }
+    signingConfigs {
+        release {
+            keyAlias TEXT_LAUNCHER_KEY_ALIAS
+            keyPassword TEXT_LAUNCHER_KEY_PASSWORD
+            storeFile file("../keystore")
+            storePassword TEXT_LAUNCHER_STORE_PASSWORD
+        }
+    }
+    buildTypes {
+        all {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            signingConfig signingConfigs.release
+        }
+    }
+}
