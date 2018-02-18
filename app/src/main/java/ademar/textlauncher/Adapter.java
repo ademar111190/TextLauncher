@@ -7,19 +7,14 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public final class Adapter extends BaseAdapter {
 
-    private final ArrayList<Model> models;
-    private final boolean[] enabled;
+    private final ArrayList<Model> models = new ArrayList<>();
 
+    private boolean[] enabled = new boolean[0];
     private boolean filtered;
-
-    Adapter(ArrayList<Model> models) {
-        this.models = models;
-        enabled = new boolean[models.size()];
-        filtered = false;
-    }
 
     @Override
     public int getCount() {
@@ -54,6 +49,14 @@ public final class Adapter extends BaseAdapter {
         }
         ((TextView) view).setText(getItem(index).label);
         return view;
+    }
+
+    void update(List<Model> models) {
+        this.models.clear();
+        this.models.addAll(models);
+        enabled = new boolean[models.size()];
+        filtered = false;
+        notifyDataSetChanged();
     }
 
     void filter(String query) {
