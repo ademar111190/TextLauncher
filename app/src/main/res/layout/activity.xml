@@ -29,4 +29,18 @@
         android:listSelector="?android:attr/selectableItemBackground"
         tools:listitem="@layout/model"/>
 
+    <ImageView
+        android:id="@+id/clear_filter"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="end"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:contentDescription="@android:string/cancel"
+        android:focusable="true"
+        android:scaleType="center"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
 </merge>
