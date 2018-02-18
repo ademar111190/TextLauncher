@@ -11,7 +11,11 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    android:textColor="@color/text"
+    android:shadowColor="@android:color/black"
+    android:shadowDx="2.0"
+    android:shadowDy="2.0"
+    android:shadowRadius="2.0"
+    android:textColor="@android:color/white"
     android:textSize="22sp"
     android:textStyle="bold"
     tools:text="Application ABC"/>

@@ -26,7 +26,7 @@
         android:cacheColorHint="@android:color/transparent"
         android:divider="@null"
         android:fastScrollEnabled="true"
-        android:listSelector="@drawable/background"
+        android:listSelector="?android:attr/selectableItemBackground"
         tools:listitem="@layout/model"/>
 
 </merge>
