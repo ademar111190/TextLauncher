@@ -1,20 +1,23 @@
 apply plugin: 'com.android.application'
 
+Properties properties = new Properties()
+properties.load(rootProject.file("local.properties").newDataInputStream())
+
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
     defaultConfig {
         applicationId "ademar.textlauncher"
         minSdkVersion 14
-        targetSdkVersion 27
-        versionCode 2
-        versionName "1.1.0"
+        targetSdkVersion 28
+        versionCode 3
+        versionName "1.2.0"
     }
     signingConfigs {
         release {
-            keyAlias TEXT_LAUNCHER_KEY_ALIAS
-            keyPassword TEXT_LAUNCHER_KEY_PASSWORD
+            keyAlias properties.getProperty("TEXT_LAUNCHER_KEY_ALIAS")
+            keyPassword properties.getProperty("TEXT_LAUNCHER_KEY_PASSWORD")
             storeFile file("../keystore")
-            storePassword TEXT_LAUNCHER_STORE_PASSWORD
+            storePassword properties.getProperty("TEXT_LAUNCHER_STORE_PASSWORD")
         }
     }
     buildTypes {
