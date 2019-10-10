@@ -34,7 +34,8 @@ import static android.content.Intent.CATEGORY_LAUNCHER;
 import static android.view.inputmethod.EditorInfo.IME_ACTION_SEARCH;
 
 public final class Activity extends android.app.Activity implements
-        Comparator<Model>, TextWatcher,
+        Comparator<Model>,
+        TextWatcher,
         AdapterView.OnItemClickListener,
         AdapterView.OnItemLongClickListener,
         TextView.OnEditorActionListener,
