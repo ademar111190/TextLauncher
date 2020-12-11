@@ -2,63 +2,143 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="#ffffff"/>
+            <solid android:color="#ffffff" />
+        </shape>
+    </item>
+    <item android:top="-64dp">
+        <shape android:shape="line">
+            <stroke
+                android:width="2dp"
+                android:color="#000000" />
+            <size android:height="2dp" />
+        </shape>
+    </item>
+    <item android:top="-56dp">
+        <shape android:shape="line">
+            <stroke
+                android:width="2dp"
+                android:color="#000000" />
+            <size android:height="2dp" />
+        </shape>
+    </item>
+    <item android:top="-48dp">
+        <shape android:shape="line">
+            <stroke
+                android:width="2dp"
+                android:color="#000000" />
+            <size android:height="2dp" />
+        </shape>
+    </item>
+    <item android:top="-40dp">
+        <shape android:shape="line">
+            <stroke
+                android:width="2dp"
+                android:color="#000000" />
+            <size android:height="2dp" />
+        </shape>
+    </item>
+    <item android:top="-32dp">
+        <shape android:shape="line">
+            <stroke
+                android:width="2dp"
+                android:color="#000000" />
+            <size android:height="2dp" />
         </shape>
     </item>
     <item android:top="-24dp">
         <shape android:shape="line">
             <stroke
                 android:width="2dp"
-                android:color="#000000"/>
-            <size android:height="2dp"/>
+                android:color="#000000" />
+            <size android:height="2dp" />
         </shape>
     </item>
     <item android:top="-16dp">
         <shape android:shape="line">
             <stroke
                 android:width="2dp"
-                android:color="#000000"/>
-            <size android:height="2dp"/>
+                android:color="#000000" />
+            <size android:height="2dp" />
         </shape>
     </item>
     <item android:top="-8dp">
         <shape android:shape="line">
             <stroke
                 android:width="2dp"
-                android:color="#000000"/>
-            <size android:height="2dp"/>
+                android:color="#000000" />
+            <size android:height="2dp" />
         </shape>
     </item>
     <item>
         <shape android:shape="line">
             <stroke
                 android:width="2dp"
-                android:color="#000000"/>
-            <size android:height="2dp"/>
+                android:color="#000000" />
+            <size android:height="2dp" />
         </shape>
     </item>
     <item android:top="8dp">
         <shape android:shape="line">
             <stroke
                 android:width="2dp"
-                android:color="#000000"/>
-            <size android:height="2dp"/>
+                android:color="#000000" />
+            <size android:height="2dp" />
         </shape>
     </item>
     <item android:top="16dp">
         <shape android:shape="line">
             <stroke
                 android:width="2dp"
-                android:color="#000000"/>
-            <size android:height="2dp"/>
+                android:color="#000000" />
+            <size android:height="2dp" />
         </shape>
     </item>
     <item android:top="24dp">
         <shape android:shape="line">
             <stroke
                 android:width="2dp"
-                android:color="#000000"/>
-            <size android:height="2dp"/>
+                android:color="#000000" />
+            <size android:height="2dp" />
+        </shape>
+    </item>
+    <item android:top="32dp">
+        <shape android:shape="line">
+            <stroke
+                android:width="2dp"
+                android:color="#000000" />
+            <size android:height="2dp" />
+        </shape>
+    </item>
+    <item android:top="40dp">
+        <shape android:shape="line">
+            <stroke
+                android:width="2dp"
+                android:color="#000000" />
+            <size android:height="2dp" />
+        </shape>
+    </item>
+    <item android:top="48dp">
+        <shape android:shape="line">
+            <stroke
+                android:width="2dp"
+                android:color="#000000" />
+            <size android:height="2dp" />
+        </shape>
+    </item>
+    <item android:top="56dp">
+        <shape android:shape="line">
+            <stroke
+                android:width="2dp"
+                android:color="#000000" />
+            <size android:height="2dp" />
+        </shape>
+    </item>
+    <item android:top="64dp">
+        <shape android:shape="line">
+            <stroke
+                android:width="2dp"
+                android:color="#000000" />
+            <size android:height="2dp" />
         </shape>
     </item>
 </layer-list>

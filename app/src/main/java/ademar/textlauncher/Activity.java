@@ -45,6 +45,7 @@ public final class Activity extends android.app.Activity implements
 
     private EditText filter;
     private ImageView clear;
+    private BroadcastReceiver broadcastReceiver;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,12 +71,21 @@ public final class Activity extends android.app.Activity implements
         intentFilter.addAction(ACTION_PACKAGE_REMOVED);
         intentFilter.addAction(ACTION_PACKAGE_REPLACED);
         intentFilter.addDataScheme("package");
-        registerReceiver(new BroadcastReceiver() {
+
+        broadcastReceiver = new BroadcastReceiver() {
             @Override
             public void onReceive(Context context, Intent intent) {
                 update();
             }
-        }, intentFilter);
+        };
+
+        registerReceiver(broadcastReceiver, intentFilter);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        unregisterReceiver(broadcastReceiver);
     }
 
     @Override
@@ -163,9 +173,12 @@ public final class Activity extends android.app.Activity implements
         ArrayList<Model> models = new ArrayList<>();
         long id = 0;
         for (ResolveInfo resolveInfo : availableActivities) {
-            models.add(new Model(++id,
+            if ("ademar.textlauncher".equalsIgnoreCase(resolveInfo.activityInfo.packageName)) continue;
+            models.add(new Model(
+                    ++id,
                     resolveInfo.loadLabel(packageManager).toString(),
-                    resolveInfo.activityInfo.packageName));
+                    resolveInfo.activityInfo.packageName
+            ));
         }
         Collections.sort(models, this);
         adapter.update(models);
