@@ -1,0 +1,3 @@
+- Update build tools
+- Increase android target version
+- Uses java 11
