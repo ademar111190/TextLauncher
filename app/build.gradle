@@ -1,16 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 33
+    compileSdkVersion 34
     defaultConfig {
         applicationId "ademar.textlauncher"
         minSdkVersion 14
-        targetSdkVersion 33
-        versionCode 8
-        versionName "1.3.2"
+        targetSdkVersion 34
+        versionCode 9
+        versionName "1.4.0"
     }
     buildTypes {
-        all {
+        configureEach {
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -20,4 +20,5 @@ android {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
     }
+    namespace "ademar.textlauncher"
 }
