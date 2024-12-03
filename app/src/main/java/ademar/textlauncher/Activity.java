@@ -90,6 +90,7 @@ public final class Activity extends android.app.Activity implements
 
     @Override
     public void onBackPressed() {
+        clearSearch();
     }
 
     @Override
